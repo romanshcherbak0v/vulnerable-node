@@ -25,7 +25,7 @@ logger4js.setLevel('INFO');
 
 var accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'))
 
-var password = 'p4s5w0rd';
+var tetete = '123';
 
 /*
  * Template engine
