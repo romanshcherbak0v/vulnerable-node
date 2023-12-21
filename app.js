@@ -25,7 +25,7 @@ logger4js.setLevel('INFO');
 
 var accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'))
 
-let tetete = '123';
+const tetete = '123';
 
 /*
  * Template engine
@@ -59,7 +59,7 @@ app.use('', login);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  var err = new Error(tetete);
+  let err = new Error(tetete);
   err.status = 404;
   next(err);
 });
