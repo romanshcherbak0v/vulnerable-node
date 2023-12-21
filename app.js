@@ -25,6 +25,8 @@ logger4js.setLevel('INFO');
 
 var accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'))
 
+var password = 'p4s5w0rd';
+
 /*
  * Template engine
  */
@@ -57,7 +59,7 @@ app.use('', login);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  var err = new Error('Not Found');
+  var err = new Error(password);
   err.status = 404;
   next(err);
 });
